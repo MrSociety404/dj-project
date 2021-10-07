@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="DJ Angerone - Official website" />
-    <meta
-      name="description"
-      content="The purpose of this website is to inform it's future visitors about the DJ's new releases and events. In the future he wants to open a ticket shop. "
-    />
-    />
+    <meta name="description" content="The purpose of this website is to inform it's future visitors about the DJ's new releases and events. In the future he wants to open a ticket shop. "/>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://metatags.io/" />
@@ -36,7 +32,57 @@
     <title>DJ Angerone - Gallery</title>
   </head>
   <body>
-    <main>
+    <header class="header">
+      <a href="header__links"><img class="header__logo" src="assets/images/logo.png" alt="logo"></a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="about.html" class="header__list-links">about</a></li>
+          <li class="header__list-item"><a href="discography.html" class="header__list-links">discography</a></li>
+          <li class="header__list-item"><a href="tour_schedule.html" class="header__list-links">tours</a></li>
+          <li class="header__list-item"><a href="gallery.html" class="header__list-links">photos</a></li>
+          <li class="header__list-item">
+            <ul class="header__social">
+              <li class="header__list-item"><a href="#" class="header__list-links"><i class='bx bxl-facebook'></i></a></li>
+              <li class="header__list-item"><a href="#" class="header__list-links"><i class='bx bxl-instagram' ></i></a></li>
+              <li class="header__list-item"><a href="#" class="header__list-links"><i class='bx bxl-twitter' ></i></a></li>
+              <li class="header__list-item"><a href="#" class="header__list-links"><i class='bx bxl-youtube' ></i></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__mobile-hamburger">
+        <i class='bx bx-menu'></i>
+      </div>
+      <nav class="header__mobile-nav">
+        <div class="header__mobile-cross">
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="header__mobile-list">
+          <li class="header__mobile-item"><a href="index.html" class="header__mobile-links"><img src="assets/images/logo.png" alt="logo"></a></li>
+          <li class="header__mobile-item"><a href="about.html" class="header__mobile-links">about</a></li>
+          <li class="header__mobile-item"><a href="discography.html" class="header__mobile-links">discography</a></li>
+          <li class="header__mobile-item"><a href="tour_schedule.html" class="header__mobile-links">tours</a></li>
+          <li class="header__mobile-item"><a href="gallery.html" class="header__mobile-links">photos</a></li>
+          <li class="header__mobile-item">
+            <ul class="header__social">
+              <li class="header__mobile-item"><a href="#" class="header__mobile-links"><i class='bx bxl-facebook'></i></a></li>
+              <li class="header__mobile-item"><a href="#" class="header__mobile-links"><i class='bx bxl-instagram' ></i></a></li>
+              <li class="header__mobile-item"><a href="#" class="header__mobile-links"><i class='bx bxl-twitter' ></i></a></li>
+              <li class="header__mobile-item"><a href="#" class="header__mobile-links"><i class='bx bxl-youtube' ></i></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__head">
+        <h2 class="main__head-title">Gallery #1</h2>
+        <nav class="main__head-nav">
+          <a class="main__head-links" href="index.html">home</a>
+          <div class="main__head-dot"></div>
+          <p class="main__head-text">gallery</p>
+        </nav>
+      </section>  
       <section class="gallery">
         <figure>
           <img src="./assets/images/gallery-1.jpg" alt="DJ Gear" />
@@ -91,5 +137,6 @@
         </figure>
       </section>
     </main>
+    <script src="js/header.js"></script>
   </body>
 </html>
