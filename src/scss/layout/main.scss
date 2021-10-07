@@ -1,32 +1,40 @@
 .main {
-    max-width: $desktop;
     margin: auto;
     &__head {
-        width: 100%;
-        height: 60vh;
-        background: url("/assets/images/banner-img.jpg");
+        height: 60vw;
+        min-height: 200px;
+        max-height: 70vh;
+        background-image: url('/assets/images/banner-img.jpg');
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-bottom: 6em;
+        padding-top: 1em;
         &-title {
             color: $white;
-            font-size: 2.5em;
+            font-size: 2.3em;
             text-transform: uppercase;
+            @media (max-width:$tablet) {
+                font-size: 1.8em;
+            }
         }
         &-nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 2em;
+            @media (max-width:$tablet) {
+                margin-top: 1em;
+            }
         }
         %navText {
             text-transform: uppercase;
             color: $white;
-            position: relative
+            position: relative;
         }
         &-links {
             @extend %navText;
