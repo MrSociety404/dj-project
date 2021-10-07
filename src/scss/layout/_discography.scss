@@ -1,0 +1,33 @@
+.discography {
+  background-color: $light-grey;
+  width: 100%;
+
+  .discography__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: $desktop;
+    margin: 0 auto;
+    padding: 4em 0;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        font-family: $ff-poppins; //the variable is not working may be we need to import is
+        span:first-child {
+          font-weight: bold;
+        }
+        span:last-child {
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
