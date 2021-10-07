@@ -1,0 +1,24 @@
+.home {
+  &__head {
+    height: 60vw;
+    min-height: 200px;
+    max-height: 85vh;
+    background-image: url("/assets/images/homapage-banner-img.jpg");
+    background-position: center;
+    &-container {
+    height: 100%;
+    margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: $white;
+      max-width: $desktop;
+    }
+    &-title {
+      -webkit-text-stroke: 1px $white;
+      font-size: 6em;
+      line-height: 1em;
+      color: transparent;
+    }
+  }
+}
