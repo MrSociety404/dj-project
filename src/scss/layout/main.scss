@@ -1,5 +1,4 @@
 .main {
-    max-width: $desktop;
     margin: auto;
     &__head {
         width: 100%;
@@ -11,7 +10,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 6em;
         &-title {
             color: $white;
             font-size: 2.5em;

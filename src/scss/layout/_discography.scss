@@ -1,22 +1,20 @@
 .discography {
-  background-color: rgb(
-    240,
-    233,
-    233
-  ); // can we declare this color as a variable
+  background-color: $light-grey;
   width: 100%;
 
   .discography__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5em;
-    margin: 2em auto;
-    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: $desktop;
+    margin: 0 auto;
+    padding: 4em 0;
 
     article {
-      width: 100%;
-      height: auto;
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       p {
         display: flex;
         flex-direction: column;
@@ -30,18 +28,6 @@
           font-weight: lighter;
         }
       }
-    }
-
-    @media (max-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5em;
-    }
-
-    @media (max-width: 600px) {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5em;
     }
   }
 }
