@@ -15,17 +15,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 1em 0;
       p {
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
-        font-family: $ff-poppins; //the variable is not working may be we need to import is
         span:first-child {
-          font-weight: bold;
+          font-weight: 600;
         }
         span:last-child {
-          font-weight: lighter;
+          font-weight: 400;
         }
       }
     }
