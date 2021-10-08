@@ -1,42 +1,51 @@
 .home {
   &__head {
-    height: 60vw;
-    min-height: 200px;
-    max-height: 85vh;
+    height: 300px;
     background-image: url("/assets/images/homapage-banner-img.jpg");
     background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @media (min-width: $tablet) {
+      height: 400px;
+    }
+    @media (min-width: $desktop) {
+      height: 600px;
+    }
     &-container {
-    height: 100%;
-    margin: 0 auto;
-    padding-bottom: 6em;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
       color: $white;
       max-width: $desktop;
+      width: 90%;
     }
     &-title {
+      font-size: 2.1em;
       -webkit-text-stroke: 1px $white;
-      font-size: 6em;
-      line-height: 1em;
       color: transparent;
+      line-height: 1em;
+      margin-bottom: 0.6em;
+      @media (min-width: $tablet) {
+        font-size: 4.8em;
+      }
     }
   }
   &__music {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 3em;
+    justify-content: space-between;
+    max-width: $desktop;
+    margin-bottom: 4em;
     &-btn {
-      font-size: 2em;
+      font-size: 1.6em;
       cursor: pointer;
     }
     &-player {
-      width: 75%;
+      width: 50%;
       height: 2px;
-      margin: 0 1em;
       background-color: $white;
+      @media (min-width: $tablet) {
+        width: 80%;
+      }
     }
   }
 }
