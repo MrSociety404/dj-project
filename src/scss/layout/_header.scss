@@ -4,13 +4,19 @@
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1.5em auto;
-  padding: 0 1em;
   color: $white;
-  max-width: $desktop;
+  transition: background-color .2s ease;
+  &__box {
+    margin: 1.5em auto;
+    padding: 0 1em;
+    max-width: $desktop;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &.scrolled {
+    background-color: $dark-grey;
+  }
   &__logo {
     @media (max-width: $tablet) {
       height: 2.5em;

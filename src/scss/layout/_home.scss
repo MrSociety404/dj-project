@@ -4,6 +4,7 @@
     background-image: url("/assets/images/homapage-banner-img.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -34,7 +35,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: $desktop;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
     &-btn {
       font-size: 1.6em;
       cursor: pointer;
@@ -45,6 +46,161 @@
       background-color: $white;
       @media (min-width: $tablet) {
         width: 80%;
+      }
+    }
+  }
+
+  &__time {
+    position: relative;
+    height: 15em;
+    max-width: $desktop;
+    margin: 0 auto;
+    @media (min-width:$tablet) {
+      height: 5em;
+    }
+  }
+  &__timer {
+    max-width: $desktop;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 2em;
+    background-color: $dark-grey;
+    color: $white;
+    position: absolute;
+    top: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      padding: 1em 2em;
+      margin: auto;
+    }
+    &-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+      text-align: center;
+    }
+    &-title {
+      font-size: 2em;
+      font-weight: 500;
+    }
+    &-text {
+      opacity: .6;
+    }
+    &-time {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 600px;
+    }
+    &-number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2em 0;
+      &:last-child{
+        display: none;
+        @media (min-width: $tablet) {
+          display: block;
+        }
+      }
+      &-num {
+        font-size: 2.8em;
+        font-weight: 700;
+        line-height: 1em;
+      }
+      &-text {
+        text-transform: uppercase;
+      }
+    }
+    button {
+      &:hover {
+        background-color: $dark-grey;
+        color: $white;
+      }
+    }
+  }
+
+  &__about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 1em;
+    margin: 8em auto 5em auto;
+    position: relative;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &-figure {
+      position: relative;
+      display: inline-block;
+      padding: 1em;
+      width: 100%;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 18px;
+        border-radius: 2px;
+        background-color: $primary;
+        top: -5px;
+        left: 50px;
+      }
+      &::before {
+        content: "▐▐";
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        z-index: 3;
+        color: $primary;
+        font-size: 2em;
+      }
+    }
+    &-img {
+      width: 100%;
+      display: inline-block;
+      border-radius: 15px;
+    }
+    &-content {
+      margin-left: 3em;
+      @media (max-width: $tablet) {
+        margin: 2em auto;
+      }
+    }
+    &-title {
+      font-size: 1.8em;
+    }
+    &-text {
+      color: $grey;
+    }
+    &-quote {
+      color: $grey;
+      quotes: none;
+      display: block;
+      font-size: 1.2em;
+      padding: 1em;
+      position: relative;
+      z-index: 2;
+      &::before {
+        content: "′′";
+        position: absolute;
+        z-index: 1;
+        top: -45px;
+        left: 20px;
+        transform: scale();
+        font-size: 8em;
+        color: $primary;
+        opacity: 0.2;
       }
     }
   }
