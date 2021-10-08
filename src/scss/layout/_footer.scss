@@ -26,6 +26,10 @@
         &-link{
             color: $white;
             text-transform: uppercase;
+            transition: color .2s ease;
+            &:hover {
+                color: $primary;
+            }
         }
     }
     &__social{
@@ -46,7 +50,10 @@
             border-radius: 50%;
             background-color: $grey ;
             color: $white;
-            
+            transition: color .2s ease;
+            &:hover {
+                color: $primary;
+            }            
         }
         
     }
