@@ -1,24 +1,199 @@
 .home {
   &__head {
-    height: 60vw;
-    min-height: 200px;
-    max-height: 85vh;
+    height: 300px;
     background-image: url("/assets/images/homapage-banner-img.jpg");
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @media (min-width: $tablet) {
+      height: 400px;
+    }
+    @media (min-width: $desktop) {
+      height: 600px;
+    }
     &-container {
-    height: 100%;
-    margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
       color: $white;
       max-width: $desktop;
+      width: 90%;
     }
     &-title {
+      font-size: 2.1em;
       -webkit-text-stroke: 1px $white;
-      font-size: 6em;
-      line-height: 1em;
       color: transparent;
+      line-height: 1em;
+      margin-bottom: 0.6em;
+      @media (min-width: $tablet) {
+        font-size: 4.8em;
+      }
+    }
+  }
+  &__music {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $desktop;
+    margin-bottom: 6em;
+    &-btn {
+      font-size: 1.6em;
+      cursor: pointer;
+    }
+    &-player {
+      width: 50%;
+      height: 2px;
+      background-color: $white;
+      @media (min-width: $tablet) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__time {
+    position: relative;
+    height: 15em;
+    max-width: $desktop;
+    margin: 0 auto;
+    @media (min-width:$tablet) {
+      height: 5em;
+    }
+  }
+  &__timer {
+    max-width: $desktop;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 2em;
+    background-color: $dark-grey;
+    color: $white;
+    position: absolute;
+    top: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      padding: 1em 2em;
+      margin: auto;
+    }
+    &-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+      text-align: center;
+    }
+    &-title {
+      font-size: 2em;
+      font-weight: 500;
+    }
+    &-text {
+      opacity: .6;
+    }
+    &-time {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 600px;
+    }
+    &-number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2em 0;
+      &:last-child{
+        display: none;
+        @media (min-width: $tablet) {
+          display: block;
+        }
+      }
+      &-num {
+        font-size: 2.8em;
+        font-weight: 700;
+        line-height: 1em;
+      }
+    }
+    button {
+      &:hover {
+        background-color: $dark-grey;
+        color: $white;
+      }
+    }
+  }
+
+  &__about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 1em;
+    margin: 8em auto 5em auto;
+    position: relative;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 18px;
+      border-radius: 2px;
+      background-color: $primary;
+      top: 5px;
+      left: 50px;
+    }
+    &::before {
+      content: "▐▐";
+      position: absolute;
+      top: 320px;
+      left: 400px;
+      z-index: 3;
+      color: $primary;
+      font-size: 2em;
+    }
+    &-img {
+      border-radius: 15px;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: auto;
+    }
+    &-content {
+      margin-left: 3em;
+      @media (max-width: $tablet) {
+        margin: 2em auto;
+      }
+    }
+    &-title {
+      font-size: 1.8em;
+    }
+    &-text {
+      color: $grey;
+    }
+    &-quote {
+      color: $grey;
+      quotes: none;
+      display: block;
+      font-size: 1.2em;
+      padding: 1em;
+      position: relative;
+      z-index: 2;
+      &::before {
+        content: "′′";
+        position: absolute;
+        z-index: 1;
+        top: -45px;
+        left: 20px;
+        transform: scale();
+        font-size: 8em;
+        color: $primary;
+        opacity: 0.2;
+      }
     }
   }
 }
