@@ -1,5 +1,5 @@
 .banner__listen{
-background-image: url(/assets/images/homepage-latest-releases-background.jpg);
+background-image: url('/assets/images/homepage-latest-releases-background.jpg');
 width: 100%;
 height: 300px;
 background-size: cover;
@@ -29,7 +29,8 @@ width: 600px;
 height: 100px;
 display: flex;
 justify-content: center;
-
+max-width: 100%;
+text-align: center;
 font-family:$ff-poppins;
 font-weight: bold;
 font-size: x-large;
