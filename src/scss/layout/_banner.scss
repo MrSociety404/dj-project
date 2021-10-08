@@ -1,0 +1,70 @@
+.banner__listen{
+background-image: url(/assets/images/homepage-latest-releases-background.jpg);
+width: 100%;
+height: 300px;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: $white;
+text-transform: uppercase;
+font-family:$ff-poppins;
+position: relative;
+&-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    font-family:$ff-poppins;
+    background-color: $primary;
+
+}
+&-text{
+width: 600px;
+height: 100px;
+display: flex;
+justify-content: center;
+
+font-family:$ff-poppins;
+font-weight: bold;
+font-size: x-large;
+}
+&__decoration{
+    
+    &-top{
+        width: 25px;
+        height: 50px;
+        background-color: $primary;
+        top:-25px;
+        right:200px;
+        position: absolute;
+        border-radius: 2px;
+    }
+    &__bottom{
+        &-one{
+        width: 10px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $primary;
+        position: absolute;
+        top:280px;
+        left:100px;
+        }
+        &-two{
+        width: 10px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $primary;
+        position: absolute;
+        top:280px;
+        left:120px;
+        }
+
+    }
+}
+}
