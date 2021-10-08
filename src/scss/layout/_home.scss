@@ -140,31 +140,36 @@
       flex-direction: column;
       align-items: center;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      height: 30px;
-      width: 18px;
-      border-radius: 2px;
-      background-color: $primary;
-      top: 5px;
-      left: 50px;
-    }
-    &::before {
-      content: "▐▐";
-      position: absolute;
-      top: 320px;
-      left: 400px;
-      z-index: 3;
-      color: $primary;
-      font-size: 2em;
-    }
-    &-img {
-      border-radius: 15px;
+    
+    &-figure {
       position: relative;
       display: inline-block;
+      padding: 1em;
       width: 100%;
-      height: auto;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 18px;
+        border-radius: 2px;
+        background-color: $primary;
+        top: -5px;
+        left: 50px;
+      }
+      &::before {
+        content: "▐▐";
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        z-index: 3;
+        color: $primary;
+        font-size: 2em;
+      }
+    }
+    &-img {
+      width: 100%;
+      display: inline-block;
+      border-radius: 15px;
     }
     &-content {
       margin-left: 3em;
