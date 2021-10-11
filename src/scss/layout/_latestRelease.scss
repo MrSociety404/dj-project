@@ -1,7 +1,6 @@
 .latestRel{
     
-    width: $desktop;
-    height: 800px;
+    max-width: $desktop;
     margin: 0 auto;
     &__title{
         font-family: $ff-poppins;
@@ -23,7 +22,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: 3em;
+        margin: 3em 0;
+        flex-wrap: wrap;
+        li {
+            margin-bottom: 1em;
+        }
         &-title{
             text-align: center;
             text-transform: capitalize;
