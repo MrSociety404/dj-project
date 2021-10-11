@@ -1,15 +1,15 @@
 .container {
-display:inline-block;
-vertical-align: middle;
-position: fixed;
-// z-index: 900;
-width: 100%;
-height: 100%;
-text-align: center;
-top: 0;
-left: 0;
-background:rgba(0,0,0,.8);
-  
+  display: inline-block;
+  vertical-align: middle;
+  position: fixed;
+  // z-index: 900;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+
   .zoomed {
     // display: inline-flex;
     // position:fixed;
@@ -17,16 +17,16 @@ background:rgba(0,0,0,.8);
     // position: top 0;
     // position: left 0;
     z-index: 900;
-      max-width: 90%;
-      max-height: 80%;
+    width: 90%;
+    height: 80%;
     margin-top: 10%;
     outline: none;
     display: block;
     object-fit: contain;
-   
-    span{
-        box-sizing:content-box;
-        background-color: white;
+
+    span {
+      box-sizing: content-box;
+      background-color: white;
     }
   }
 }
