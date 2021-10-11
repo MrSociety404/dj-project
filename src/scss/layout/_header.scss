@@ -18,6 +18,8 @@
     background-color: $dark-grey;
   }
   &__logo {
+    max-width: 250px;
+    height: auto;
     @media (max-width: $tablet) {
       height: 2.5em;
     }

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: boxicons;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/boxicons.eot);
+  src: url(../fonts/boxicons.eot) format("embedded-opentype"),
+    url(../fonts/boxicons.woff2) format("woff2"),
+    url(../fonts/boxicons.woff) format("woff"),
+    url(../fonts/boxicons.ttf) format("truetype"),
+    url(../fonts/boxicons.svg?#boxicons) format("svg");
+}
+.bx {
+  font-family: boxicons !important;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bx-ul {
+  margin-left: 2em;
+  padding-left: 0;
+  list-style: none;
+}
+.bx-ul > li {
+  position: relative;
+}
+.bx-ul .bx {
+  font-size: inherit;
+  line-height: inherit;
+  position: absolute;
+  left: -2em;
+  width: 2em;
+  text-align: center;
+}
+.bxl-facebook:before {
+  content: "\e926";
+}
+.bxl-facebook-circle:before {
+  content: "\e927";
+}
+.bxl-facebook-square:before {
+  content: "\e928";
+}
+.bxl-youtube:before {
+  content: "\e989";
+}
+.bxl-instagram:before {
+  content: "\e939";
+}
+.bxl-instagram-alt:before {
+  content: "\e93a";
+}
+.bxl-twitter:before {
+  content: "\e979";
+}
+.bx-play:before {
+  content: "\ee20";
+}
+.bx-play-circle:before {
+  content: "\ee21";
+}
+.bx-menu:before {
+  content: "\edc2";
+}
+.bx-menu-alt-left:before {
+  content: "\edc3";
+}
+.bx-menu-alt-right:before {
+  content: "\edc4";
+}
+.bx-x:before {
+  content: "\eef0";
+}
+.bx-x-circle:before {
+  content: "\eef1";
+}
+.bx-crown:before {
+  content: "\ecef";
+}
+.bx-podcast:before {
+  content: "\ee26";
+}
+.bx-cloud-download:before {
+  content: "\ecc4";
+}
+.bx-chevron-up:before {
+  content: "\ecba";
+}
+.bxl-pinterest-alt:before {
+  content: "\e959";
+}
