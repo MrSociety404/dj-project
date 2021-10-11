@@ -1,0 +1,37 @@
+.latestRel{
+    
+    width: $desktop;
+    height: 800px;
+    margin: 0 auto;
+    &__title{
+        font-family: $ff-poppins;
+        margin-top: 3em;
+        text-align: center;
+        color: $dark;
+        text-transform: capitalize;
+    }
+    &__text{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 1em;
+        text-align: center;
+        font-family: $ff-poppins;
+        color: $grey;
+        opacity: 0.5;
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3em;
+        &-title{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        &-date{
+            text-align: center;
+        }
+        
+    }
+    }
+
