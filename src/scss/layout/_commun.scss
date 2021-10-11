@@ -49,10 +49,11 @@
 
 .timeline {
     background-color: $light-grey;
+    padding: 2em;
     &__content {
         max-width: $desktop;
         border-radius: 15px ;
-        margin: 2em auto;
+        margin: 0 auto;
     }
     &__head {
         background-color: $dark;
