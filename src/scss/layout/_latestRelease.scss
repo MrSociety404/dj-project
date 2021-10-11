@@ -2,6 +2,7 @@
     
     max-width: $desktop;
     margin: 0 auto;
+    padding: 1em;
     &__title{
         font-family: $ff-poppins;
         margin-top: 3em;
@@ -26,6 +27,9 @@
         flex-wrap: wrap;
         li {
             margin-bottom: 1em;
+            img {
+                max-width: 100%;
+            }
         }
         &-title{
             text-align: center;
