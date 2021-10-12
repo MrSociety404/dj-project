@@ -1,5 +1,7 @@
 .tickets{
     padding: 1em;
+    max-width: $desktop;
+    margin: 0 auto;
     &__title{
         text-align: center;
         padding-top: 1em;
