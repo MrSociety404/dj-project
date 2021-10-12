@@ -1,6 +1,7 @@
 //Base
 @import "abstract/variables";
 @import "abstract/base";
+@import "abstract/boxicon";
 
 //Layout
 @import "layout/header";
@@ -10,10 +11,5 @@
 @import "layout/main";
 @import "layout/gallery"; 
 @import "layout/discography";
-@import "layout/zoom-test";
-@import "layout/banner";
-@import "layout/latestRelease";
 @import "layout/about";
 @import "layout/tickets";
-@import "layout/partners";
-
