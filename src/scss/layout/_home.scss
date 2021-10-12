@@ -36,18 +36,44 @@
     justify-content: space-between;
     max-width: $desktop;
     margin-bottom: 6em;
+    &-controls {
+      display: none;
+    }
+    &-time {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-actual-time {
+      text-align: center;
+      width: 40%;
+    }
     &-btn {
       font-size: 1.6em;
       cursor: pointer;
     }
     &-player {
       width: 50%;
-      height: 2px;
-      background-color: $white;
+      height: 4px;
+      border-radius: 15px;
+      cursor: pointer;
+      background-color: $grey;
+      position: relative;
       @media (min-width: $tablet) {
         width: 80%;
       }
+      &-bar {
+        position: absolute;
+        height: 100%;
+        border-radius: 15px;
+        background-color: $white;
+        &.anim {
+          animation: progress-animation 156s ease;
+        }
+      }
     }
+
   }
 
   &__time {
@@ -460,4 +486,9 @@
       }
     }
   }
+}
+
+@keyframes progress-animation {
+  0% {width: 0%;}
+  100% {width: 100%;}
 }
