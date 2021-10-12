@@ -38,8 +38,13 @@ audio.addEventListener("timeupdate", (e) => {
     (audio.currentTime / audio.duration.toFixed(3)) * 100 + "%";
 });
 
-progress.addEventListener("click", (e) => {
-  audio.currentTime = (e.layerX / 100) * 19
+progress.addEventListener('click', function (event) {
+  let coordStart = this.getBoundingClientRect().left
+  let coordEnd = event.pageX
+  let p = (coordEnd - coordStart) / this.offsetWidth
+  progressBar.style.width = p.toFixed(3) * 100 + '%'
+
+  audio.currentTime = p * audio.duration
   if(!isPlaying(audio)) toggleMusic()
   else audio.play()
-});
+})

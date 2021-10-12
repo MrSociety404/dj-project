@@ -72,7 +72,7 @@
     border-radius: 15px 15px 0 0;
     &-list {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       max-width: 30%;
       padding: 0 2em;
       margin: 0 auto;
@@ -89,6 +89,7 @@
       letter-spacing: 0.1em;
       cursor: pointer;
       padding: 2em 0;
+      margin: 0 1em;
       color: $white;
       opacity: 0.5;
       transition: opacity 0.2s ease;
@@ -128,6 +129,7 @@
   &__item {
     padding: 2em;
     position: relative;
+    cursor: pointer;
     &::before {
       content: "";
       width: 30px;
@@ -140,7 +142,7 @@
       left: -12.5%;
       transform: translateX(-50%);
     }
-    &:first-child {
+    &.active {
       &::after {
         content: "";
         width: 12px;
@@ -187,6 +189,10 @@
     }
     &-desc {
       opacity: 0.6;
+      display: none;
+      &.active {
+        display: block;
+      }
     }
   }
 }
