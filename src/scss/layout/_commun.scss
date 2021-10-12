@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2em 2.4em;
+    font-size: 1rem;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .05em;
+    background-color: $primary;
+    border: 2px solid $primary;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px $primary;
+    cursor: pointer;
+    transition: 
+        color .4s ease, 
+        background-color .4s ease,
+        transform .2s ease;
+    &:hover {
+        color: $primary;
+        background-color: $white;
+    }
+    &:active {
+        transform: translateY(2px);
+    }
+}

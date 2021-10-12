@@ -1,6 +1,7 @@
 // Colors 
 $primary: #8121e0;
 $dark-grey: #282828;
+$light-grey: #EDEFF4;
 $grey: #444444;
 $white: #fff;
 $dark: #212121;
@@ -8,8 +9,8 @@ $dark: #212121;
 // Breackpoint
 $mobile:320px;
 $tablet: 768px;
-$desktop: 1440px;
+$desktop: 1240px;
 
 // Fonts 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 $ff-poppins: 'Poppins', sans-serif;
