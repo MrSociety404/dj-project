@@ -1,5 +1,8 @@
 .tickets{
     padding: 1em;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     &__title{
         text-align: center;
         padding-top: 1em;
@@ -8,23 +11,32 @@
     &__ul{
         margin: 0 auto;
         padding-top: 2em;
-        width: 90%;
+        width: 100%;
         display: flex;
-        justify-content: center;
         flex-direction: row;
+        justify-content: center;
+        @media(max-width: $tablet) {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            li{
+                border-left: none;
+            }   
+        }
         li:first-of-type{
             border-left: none;
         }
         &__li{
-            
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            flex-wrap: wrap;
             width: 30%;
             border-left: solid 1px $light-grey;
             &_fee{
-                
                 display: flex;
                 justify-content: center;
                 height:100px;
@@ -37,6 +49,7 @@
             }
             &_title{
                 font-weight: lighter;
+                padding-top: 1em;
             }
             &_text{
                 font-size: x-small;
@@ -46,7 +59,7 @@
         }
     }
     &__btn{
-        font-size: .6em;
+        font-size: .6em
         
     }
 }
