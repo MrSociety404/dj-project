@@ -230,3 +230,18 @@
     }
   }
 }
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-btn {
+    margin: 1em;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $light-grey;
+    &.active {
+      background-color: $primary;
+    }
+  }
+}

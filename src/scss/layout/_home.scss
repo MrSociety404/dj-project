@@ -209,12 +209,17 @@
 
 .fanbase {
   background-color: $dark;
-  color: $white;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  padding: 6em 4em;
   position: relative;
+  &__content {
+    max-width: $desktop;
+    color: $white;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 6em 4em;
+    margin: 0 auto;
+
+  }
   @media (max-width: $tablet) {
     flex-direction: column;
     padding: 1em;
@@ -314,7 +319,7 @@
   }
   &__logos {
     margin: 4em auto;
-    max-width: 80%;
+    max-width: $desktop;
     max-height: 200px;
     display: flex;
     justify-content: space-around;
@@ -336,52 +341,7 @@
       }
     }
   }
-  &__slide {
-    height: 50 px;
-    width: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    &-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: $primary;
-    }
-  }
-  &__decoration {
-    &-top {
-      width: 25px;
-      height: 50px;
-      background-color: $primary;
-      top: -25px;
-      right: 200px;
-      position: absolute;
-      border-radius: 2px;
-    }
-    &__bottom {
-      &-one {
-        width: 10px;
-        height: 40px;
-        border-radius: 2px;
-        background-color: $primary;
-        position: absolute;
-        top: 280px;
-        left: 100px;
-      }
-      &-two {
-        width: 10px;
-        height: 40px;
-        border-radius: 2px;
-        background-color: $primary;
-        position: absolute;
-        top: 280px;
-        left: 120px;
-      }
-    }
-  }
 }
-
 .banner__listen {
   background-image: url("/assets/images/homepage-latest-releases-background.webp");
   width: 100%;
@@ -434,6 +394,69 @@
         position: absolute;
         top: 280px;
         left: 120px;
+      }
+    }
+  }
+}
+
+.news {
+  max-width: $desktop;
+  margin: 3rem auto;
+  padding: 1em;
+  &__title {
+    text-align: center;
+    margin: 1em auto;
+  }
+  &__carousel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__item {
+    padding: 1.5em;
+    margin: 1.5em;
+    border-radius: 15px;
+    max-width: 320px;
+    &-date {
+      background-color: $primary;
+      color: $white;
+      padding: .2em .6em;
+    }
+    &-title {
+      margin: .8em 0;
+      font-weight: 500;
+    }
+    &-desc {
+      opacity: .8;
+      font-size: .8em;
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      color: $dark;
+      transition: color .2s ease;
+      margin: 1em 0;
+      &:hover {
+        color: $primary;
+      }
+    }
+    &.active {
+      background-image: url('/assets/images/homepage-news-background.webp');
+      background-position: center;
+      background-size: cover;
+      filter: grayscale(50%);
+      color: $white;
+      .news__item-link {
+        color: $white;
+      }
+      .news__item-desc {
+        opacity: 1;
       }
     }
   }
