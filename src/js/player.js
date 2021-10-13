@@ -5,6 +5,7 @@ const progressBar = document.querySelector(".home__music-player-bar");
 const progress = document.querySelector(".home__music-player");
 let minutes = "00";
 let seconds = "00";
+
 /**
  * @param {HTMLElement} audelem
  * @returns true if the music is playing
@@ -13,6 +14,9 @@ const isPlaying = (audelem) => {
   return !audelem.paused;
 };
 
+/**
+ * toggle the play pause button
+ */
 const toggleMusic = () =>  {
   if (isPlaying(audio)) {
     audio.pause();

@@ -4,6 +4,9 @@ const docHours = document.querySelector('#hours')
 const docMinutes = document.querySelector('#minutes')
 const docSeconds = document.querySelector('#seconds')
 
+/**
+ * Counter for the homepage
+ */
 setInterval(() => {
     let now = new Date().getTime()
     let distance = contDownDate - now

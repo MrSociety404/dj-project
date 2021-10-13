@@ -94,7 +94,7 @@
     align-items: center;
     justify-content: center;
     padding: 3em 2em;
-    background-color: $dark-grey;
+    background-image: url('/assets/images/bg-counter.webp');
     color: $white;
     position: absolute;
     top: -3em;
@@ -195,6 +195,7 @@
     }
     &-img {
       width: 100%;
+      height: auto;
       display: inline-block;
       border-radius: 15px;
     }
@@ -284,6 +285,7 @@
   }
   &__imagebox {
     max-width: 80%;
+    height: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -293,6 +295,7 @@
     }
     img {
       max-width: 50%;
+      height: auto;
       @media (max-width: $tablet) {
         max-width: 90%;
       }
@@ -335,7 +338,24 @@
   background-image: url(/assets/images/homepage-sponsors-background.webp);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
+  &::before {
+    content: "▐";
+    font-size: 2em;
+    color: $primary;
+    position: absolute;
+    top: -20px;
+    right: 10%;
+  }
+  &::after {
+    content: "▐▐";
+    font-size: 2em;
+    color: $primary;
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+  }
   &__title {
     padding-top: 2em;
     text-transform: capitalize;
