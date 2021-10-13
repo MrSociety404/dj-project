@@ -1,0 +1,66 @@
+.subscribe{
+    background-image: url(/assets/images/homepage-footer-background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    &::before {
+        content: "▐▐";
+        font-size: 2em;
+        color: $primary;
+        position: absolute;
+        top: -20px;
+        right: 10%;
+      }
+      &::after {
+        content: "▐";
+        font-size: 2em;
+        color: $primary;
+        position: absolute;
+        bottom: -20px;
+        left: 10%;
+      }
+    &__title{
+        text-align: center;
+        text-transform: capitalize;
+        padding-top: 2em;
+        font-size: xx-large;
+        color: $white;
+    }
+    &__input{
+        margin: 0 auto;
+        padding-top: 2em;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: $tablet){
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    input{
+        width: 40%;
+        border-radius: 5px;
+        font-size: x-large;
+        color: $grey;
+        padding: .5em;
+        @media (max-width: $tablet){
+            width: 100%;
+            margin-bottom: 1em;
+        }
+    }
+    .btn{
+        margin-left: 1em;
+        @media (max-width: $tablet){
+            margin-bottom: 0 auto;
+            width: 150px;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+}
