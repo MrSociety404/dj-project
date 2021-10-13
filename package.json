@@ -20,6 +20,40 @@
   "homepage": "https://github.com/MrSociety404/dj-project#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.19",
     "sass": "^1.42.1"
+  },
+  "customDistStructure": {
+    "config": {
+      "js": [
+        ".js",
+        ".js.map"
+      ],
+      "assets": [
+        ".webp",
+        ".png",
+        ".svg",
+        ".ico",
+        ".mp3"
+      ],
+      "css": [
+        ".css",
+        ".css.map"
+      ],
+      "fonts": [
+        ".ttf",
+        ".woff",
+        ".woff2",
+        ".eot"
+      ],
+      ".fileExtension": "folder/in/dist",
+      "folder/in/dist": [
+        ".file",
+        ".extensions"
+      ]
+    },
+    "options": {
+      "development": true
+    }
   }
 }

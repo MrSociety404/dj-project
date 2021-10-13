@@ -1,0 +1,53 @@
+.main {
+    margin: auto;
+    &__head {
+        height: 60vw;
+        min-height: 200px;
+        max-height: 70vh;
+        background-image: url('/assets/images/banner-img.webp');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-title {
+            color: $white;
+            font-size: 2.3em;
+            text-transform: uppercase;
+            @media (max-width:$tablet) {
+                font-size: 1.8em;
+            }
+        }
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2em;
+            @media (max-width:$tablet) {
+                margin-top: 1em;
+            }
+        }
+        %navText {
+            text-transform: uppercase;
+            color: $white;
+            position: relative;
+        }
+        &-links {
+            @extend %navText;
+        }
+        &-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: yellow;
+            opacity: .8;
+            margin: 0 1em
+        }
+        &-text {
+            @extend %navText;
+            opacity: .5;
+        }
+    }
+}

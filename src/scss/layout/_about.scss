@@ -1,0 +1,126 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4em auto;
+  padding: 1em;
+  max-width: $desktop;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+  &__content {
+    padding-right: 1em;
+    max-width: 100%;
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+  }
+  &__title {
+    padding-bottom: 1.5em;
+    margin-bottom: 1em;
+    position: relative;
+    display: inline-block;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #b4b2b2;
+    }
+  }
+  &__data {
+    display: flex;
+    align-items: center;
+    & i {
+      opacity: 0.5;
+      margin-right: 0.5em;
+    }
+    &-phone {
+      display: flex;
+      align-items: center;
+    }
+    &-mail {
+      display: flex;
+      align-items: center;
+      margin-left: 2em;
+    }
+  }
+  &__social {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      max-width: 30%;
+      margin: 1.5em 0;
+    }
+    &-link {
+      color: $dark;
+      font-size: 1.5em;
+      transition: color 0.2s ease;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  %text {
+    margin: 1em 0;
+    opacity: 0.8;
+  }
+  &__text {
+    @extend %text;
+    &-italic {
+      @extend %text;
+      font-style: italic;
+      letter-spacing: 0.1em;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2em 0;
+  }
+}
+
+.discover {
+    padding: 2em;
+    background-color: $light-grey;
+    background-image: url('/assets/images/bg-circle-2.png');
+    background-position: center;
+    &__title {
+        text-align: center;
+        margin: 1em auto;
+    }
+    &__content {
+        max-width: $desktop;
+        margin: 2em auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__art {
+        display: flex;
+        align-items: center;
+        max-width: 350px;
+        margin: 2.3em 0;
+        i {
+            font-size: 3.5em;
+            color: $primary;
+        }
+    }
+    &__textarea {
+        margin-left: 2em;
+    }
+    &__text {
+        opacity: .6;
+        margin: .6em 0;
+        font-size: 1rem;
+    }
+    &__subtitle {
+        font-weight: 500;
+        letter-spacing: .1em;
+    }
+}

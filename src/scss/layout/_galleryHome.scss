@@ -1,0 +1,51 @@
+.galleryHome {
+    margin: 0 auto;
+    display: grid;
+    max-width: $desktop;
+    grid-template-areas:"a a b b c c"
+                        "d d d e e e";
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 1fr;
+    @media (max-width: $tablet) {
+        grid-template-areas:
+            "a a b b"
+            "c c d d"
+            "e e e e";
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+    }
+    @media (max-width: $mobile) {
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-1{
+        grid-area: a;
+    }
+    &-3{
+        grid-area: b ;
+    }
+    &-2{
+        grid-area: c ;
+    }
+    &-4{
+        grid-area: d ;
+    }
+    &-12{
+        grid-area: e ;
+    }
+    &__container{
+        background-color: $dark-grey;
+    }
+}
+
