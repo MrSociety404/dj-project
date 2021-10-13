@@ -225,7 +225,6 @@
         z-index: 1;
         top: -45px;
         left: 20px;
-        transform: scale();
         font-size: 8em;
         color: $primary;
         opacity: 0.2;
@@ -332,6 +331,27 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+   opacity: 0;
+   padding-left: 80vw;
+  }
+  100% {
+   opacity: 1;
+   padding-left: 0;
+  }
+ }
+ @keyframes fadeOut {
+  0% {
+   opacity: 1;
+   padding-right: 0;
+  }
+  100% {
+   opacity: 0;
+   padding-right: 80vw;
+  }
+ }
+
 .partners {
   max-width: 100%;
   height: 300px;
@@ -369,6 +389,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
+    &.active {
+      display: flex;
+      animation-delay: .1s;
+      animation: fadeIn .45s ease-in-out;
+    }
     &__li {
       margin: 0 auto;
       max-height: 100px;
